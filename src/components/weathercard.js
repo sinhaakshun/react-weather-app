@@ -31,10 +31,16 @@ const Weathercard = ({tempInfo}) => {
                     setWeatherState("wi-dust");
                     break;
                 case "Smoke":
-                    setWeatherState("wi-dust");
-                    break;
-                default :
                     setWeatherState("wi-smoke");
+                    break;
+                case "Drizzle":
+                    setWeatherState("wi-raindrops");
+                    break;
+                case "Snow":
+                    setWeatherState("wi-snow");
+                    break; 
+                default :
+                    setWeatherState("wi-day-sunny");
                     break;
             }
         }
